@@ -33,24 +33,24 @@
 
 @font-face {
   font-family: 'font_h1-2';
-  src: url('./assets/font/font_h1_2.woff2') format('woff2'),
-       url('./assets/font/font_h1_2.woff') format('woff');
+  src: url('../font/font_h1_2.woff2') format('woff2'),
+       url('../font/font_h1_2.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'font_h1';
-  src: url('./assets/font/font_titulos_h1.woff2') format('woff2'),
-       url('./assets/font/font_titulos_h1.woff') format('woff');
+  src: url('../font/font_titulos_h1.woff2') format('woff2'),
+       url('../font/font_titulos_h1.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'font_txt';
-  src: url('./assets/font/font_textos.woff2') format('woff2'),
-       url('./assets/font/font_textos.woff') format('woff');
+  src: url('../font/font_textos.woff2') format('woff2'),
+       url('../font/font_textos.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
