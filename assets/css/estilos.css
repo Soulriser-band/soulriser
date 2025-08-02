@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.2;
 }
 
-h1, .h1 {
+.h1 {
   font-size: 3rem;
 }
 
@@ -11191,9 +11191,9 @@ pre {
 }
 .font_h1-2{
   font-family: "font_h1-2";
-  font-size: 8em;
+  font-size: 8em !important;
   letter-spacing: 0.2em;
-  font-weight: normal !important;
+  font-weight: normal;
 }
 .font_text_about{
   font-family: "font_txt";
@@ -11225,6 +11225,18 @@ pre {
   text-align: center;
 }
 
+
+@media (max-width: 670px) {
+  .font_h1-2 {
+    font-size: 3rem !important;
+    line-height: 1.2;
+  }
+  .font_text_about{
+    font-size: 1em;
+  }
+}
+
+
 .affix {
   min-height: 80px;
   background: #343a40;
@@ -11251,12 +11263,12 @@ pre {
   max-height: 900px;
   background: url(../imgs/bannerSR.png) no-repeat center center fixed;
   background-size: cover;
-  min-height: 750px;
+  min-height: auto;
 }
 
 .header .overlay {
   height: 100%;
-  background: rgba(33, 37, 41, 0.85);
+  background: rgba(33, 37, 41, 0.7);
   display: -webkit-flex;
   display: -ms-flex;
   display: -webkit-box;
