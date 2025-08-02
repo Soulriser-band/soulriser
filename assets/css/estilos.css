@@ -11234,6 +11234,12 @@ pre {
   .font_text_about{
     font-size: 1em;
   }
+  .header{
+    background: url(../imgs/banner_mobile.png) no-repeat center center fixed !important;
+    background-size: cover;
+    background-position: center;
+    min-height: auto;
+  }
 }
 
 
