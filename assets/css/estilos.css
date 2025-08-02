@@ -1,5 +1,4 @@
 /*!
-
 */
 :root {
   --blue: #79A9F5;
@@ -32,6 +31,19 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+@font-face {
+  font-family: 'font_h1';
+  src: url('/assets/font/font_titulos_h1.TTF');
+}
+@font-face {
+  font-family: 'font_txt';
+  src: url('/assets/font/font_textos.ttf');
+}
+@font-face {
+  font-family: 'font_h1-2';
+  src: url('/assets/font/font_h1_2.otf');
+}
+
 *,
 *::before,
 *::after {
@@ -58,6 +70,12 @@ body {
   color: #f8f9fa;
   text-align: left;
   background-color: #343a40;
+}
+
+#about{
+  background-color: #000;
+  color: rgb(255, 15, 15);
+  padding: auto;
 }
 
 [tabindex="-1"]:focus {
@@ -11156,14 +11174,61 @@ pre {
   -webkit-transform: translate(-50%, 50%);
       -ms-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
-  font-weight: bold;
-  font-size: 2rem;
+  letter-spacing: 0.5em; 
+  font-size: 3rem;
   color: #ff214f;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
-  font-family: "Oswald", sans-serif;
+  font-family: "font_h1";
+}
+
+.font_text_nav{
+  font-family: "font_txt";
+  font-size: 1.5em;
+  font-weight: normal !important;
+}
+.font_titulos{
+  font-family: "font_h1";
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  font-weight: normal !important;
+}
+.font_h1-2{
+  font-family: "font_h1-2";
+  font-size: 8em;
+  letter-spacing: 0.2em;
+  font-weight: normal !important;
+}
+.font_text_about{
+  font-family: "font_txt";
+  font-size: 1.5em;
+  letter-spacing: 0em;
+  font-weight: normal !important;
+  margin: 1em 0 !important;
+  text-align: justify;
+}
+.font_text_video{
+  font-family: "font_txt";
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  font-weight: normal !important;
+}
+.font_text_about_integrantes{
+  font-family: "font_txt";
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: normal !important;
+  font-style: normal;
+  text-align: center;
+}
+.font_text_about_detalle{
+  font-family: "font_txt";
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  font-weight: normal !important;
+  text-align: center;
 }
 
 .affix {
@@ -11190,7 +11255,7 @@ pre {
 .header {
   height: 100vh;
   max-height: 900px;
-  background: url(../imgs/banner_soulriser.png) no-repeat center center fixed;
+  background: url(../imgs/bannerSR.png) no-repeat center center fixed;
   background-size: cover;
   min-height: 750px;
 }
@@ -11254,8 +11319,12 @@ pre {
   max-width: 1440px;
 }
 
+.img_foot{
+  width: 100%;
+}
+
 .has-img-bg {
-  background: url(../imgs/about.png) no-repeat center center;
+  background: url(../imgs/about5.png) no-repeat center center;
   background-size: cover;
 }
 
