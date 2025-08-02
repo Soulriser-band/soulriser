@@ -32,23 +32,25 @@
 }
 
 @font-face {
-  font-family: 'font_h1';
-  src: url('assets/font/font_titulos_h1.woff2') format('woff2'),
-       url('assets/font/font_titulos_h1.woff') format('woff');
+  font-family: 'font_h1-2';
+  src: url('./assets/font/font_h1_2.woff2') format('woff2'),
+       url('./assets/font/font_h1_2.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'font_h1';
+  src: url('./assets/font/font_titulos_h1.woff2') format('woff2'),
+       url('./assets/font/font_titulos_h1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'font_txt';
-  src: url('assets/font/font_textos.woff2') format('woff2'),
-       url('assets/font/font_textos.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'font_h1-2';
-  src: url('assets/font/font_h1_2.woff2') format('woff2'),
-       url('assets/font/font_h1_2.woff') format('woff');
+  src: url('./assets/font/font_textos.woff2') format('woff2'),
+       url('./assets/font/font_textos.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -11171,28 +11173,28 @@ pre {
   visibility: hidden;
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
-  font-family: "font_h1";
+  font-family: "font_h1", sans-serif;
 }
 
 .font_text_nav{
-  font-family: "font_txt";
+  font-family: "font_txt", sans-serif;
   font-size: 1.5em;
   font-weight: normal !important;
 }
 .font_titulos{
-  font-family: "font_h1";
+  font-family: "font_h1", sans-serif;
   font-size: 4em;
   letter-spacing: 0.1em;
   font-weight: normal !important;
 }
 .font_h1-2{
-  font-family: "font_h1-2";
+  font-family: "font_h1-2", sans-serif;
   font-size: 8em !important;
   letter-spacing: 0.2em;
   font-weight: normal;
 }
 .font_text_about{
-  font-family: "font_txt";
+  font-family: "font_txt", sans-serif;
   font-size: 1.5em;
   letter-spacing: 0em;
   font-weight: normal !important;
@@ -11200,13 +11202,13 @@ pre {
   text-align: justify;
 }
 .font_text_video{
-  font-family: "font_txt";
+  font-family: "font_txt", sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.2em;
   font-weight: normal !important;
 }
 .font_text_about_integrantes{
-  font-family: "font_txt";
+  font-family: "font_txt", sans-serif;
   font-size: 1.5em;
   letter-spacing: 0.1em;
   font-weight: normal !important;
@@ -11214,7 +11216,7 @@ pre {
   text-align: center;
 }
 .font_text_about_detalle{
-  font-family: "font_txt";
+  font-family: "font_txt", sans-serif;
   font-size: 1em;
   letter-spacing: 0.1em;
   font-weight: normal !important;
