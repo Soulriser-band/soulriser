@@ -33,15 +33,15 @@
 
 @font-face {
   font-family: 'font_h1';
-  src: url('/assets/font/font_titulos_h1.TTF');
+  src: url('assets/font/font_titulos_h1.TTF');
 }
 @font-face {
   font-family: 'font_txt';
-  src: url('/assets/font/font_textos.ttf');
+  src: url('assets/font/font_textos.ttf');
 }
 @font-face {
   font-family: 'font_h1-2';
-  src: url('/assets/font/font_h1_2.otf');
+  src: url('assets/font/font_h1_2.otf');
 }
 
 *,
