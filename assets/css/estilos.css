@@ -11452,3 +11452,77 @@ pre {
   visibility: visible;
   opacity: 1;
 }
+
+
+
+/* --- Estilos para la sección de Redes Sociales --- */
+
+.social-icons-container {
+  display: flex; /* Habilita Flexbox */
+  justify-content: center; /* Centra los iconos horizontalmente dentro del contenedor */
+  flex-wrap: wrap; /* Permite que los iconos se envuelvan a la siguiente línea en pantallas pequeñas */
+  gap: 15px; /* Espacio entre los iconos */
+  padding: 10px 0; /* Un poco de padding arriba y abajo del contenedor de iconos */
+}
+
+.social-icon-link {
+  display: block; /* Para que el enlace ocupe todo el espacio y permita efectos hover */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: inherit; /* Hereda el color del texto, importante si usas Font Awesome */
+}
+
+/* Estilos para las imágenes de los iconos (si usas PNG/SVG) */
+.social-icon {
+  width: 50px; /* Tamaño por defecto de los iconos */
+  height: 50px;
+  object-fit: contain; /* Asegura que la imagen se escale sin cortar o distorsionar */
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Transición suave para efectos */
+  padding: 5px; /* Pequeño padding interno para evitar que el borde se pegue a la imagen */
+}
+
+.social-icon-link:hover .social-icon {
+  transform: scale(1.5); /* Agranda ligeramente al pasar el mouse */
+  opacity: 0.8; /* Reduce un poco la opacidad */
+}
+
+/* Estilos para los iconos de Font Awesome (si los usas) */
+.social-icon-fa {
+  font-size: 45px; /* Tamaño del icono */
+  /* color: #333; Color por defecto */
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-icon-link:hover .social-icon-fa {
+  transform: scale(1.1);
+}
+
+/* Colores específicos para Font Awesome al pasar el mouse (opcional, ajusta si usas imágenes) */
+.social-icon-link[href*="facebook.com"]:hover .social-icon-fa { color: #3b5998; }
+.social-icon-link[href*="instagram.com"]:hover .social-icon-fa { color: #C13584; }
+.social-icon-link[href*="tiktok.com"]:hover .social-icon-fa { color: #000000; } /* TikTok tiene un logo oscuro */
+.social-icon-link[href*="youtube.com"]:hover .social-icon-fa { color: #FF0000; }
+.social-icon-link[href*="spotify.com"]:hover .social-icon-fa { color: #1DB954; }
+
+
+/* Media Queries para ajustar el tamaño de los iconos en pantallas más pequeñas */
+@media (max-width: 575.98px) { /* Extra small devices (less than 576px) */
+  .social-icon {
+      width: 40px; /* Iconos un poco más pequeños en móviles muy pequeños */
+      height: 40px;
+  }
+  .social-icon-fa {
+      font-size: 38px;
+  }
+  .social-icons-container {
+      gap: 10px; /* Menos espacio entre iconos */
+  }
+}
+
+.saturar:hover {filter: saturate(130%);}
+.saturar_max:hover {filter: saturate(300%);}
+
+.opacidad:hover {filter: opacity(.8);} 
+
+.principales_out:hover{
+  box-shadow: 0px 0px 3px 3px rgb(255, 15, 15, 0.7);
+}
