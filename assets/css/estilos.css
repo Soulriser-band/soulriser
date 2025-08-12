@@ -144,10 +144,12 @@ dt {
   font-weight: 700;
 }
 
+/*
 dd {
   margin-bottom: .5rem;
   margin-left: 0;
 }
+*/
 
 blockquote {
   margin: 0 0 1rem;
@@ -11238,6 +11240,12 @@ pre {
     background-position: center;
     min-height: auto;
   }
+  .header_letras{
+    background: url(../imgs/banner_mobile.png) no-repeat center center fixed !important;
+    background-size: cover;
+    background-position: center;
+    min-height: auto;
+  }
 }
 
 
@@ -11270,7 +11278,15 @@ pre {
   min-height: auto;
 }
 
-.header .overlay {
+.header_letras {
+  height: 100vh;
+  max-height: 900px;
+  background: url(../imgs/porta_tapa_disco_simple.png) no-repeat center center fixed;
+  background-size: cover;
+  min-height: auto;
+}
+
+.header_letras .overlay, .header .overlay {
   height: 100%;
   background: rgba(33, 37, 41, 0.7);
   display: -webkit-flex;
@@ -11525,4 +11541,188 @@ pre {
 
 .principales_out:hover{
   box-shadow: 0px 0px 3px 3px rgb(255, 15, 15, 0.7);
+}
+
+
+
+
+
+
+
+#letras{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  justify-items: center;
+  width: 100%;
+  counter-reset: list;
+}
+
+dl {
+  height: 40vh;
+  max-width: 70vh;
+  width: 90%;
+  align-self: center;
+  box-sizing: border-box;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, rgb(255, 255, 255)), to(transparent));
+  background: linear-gradient(to right, rgb(255, 15, 15) 80%, transparent);
+  box-shadow: -5px 5px 5px 0px rgba(153, 153, 153, 0.05);
+  -webkit-transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
+}
+dl:nth-child(even) {
+  margin-left: 20px;
+}
+dl:nth-child(odd) {
+  margin-right: 20px;
+}
+dl:hover {
+  box-shadow: 0px 5px 0px 0px rgba(153, 153, 153, 0);
+}
+dl:hover:before {
+  margin-left: 10px;
+}
+dl:before {
+  counter-increment: list;
+  content: counter(list);
+  font-family: "font_txt", sans-serif;
+  font-size: 55vh;
+  color: hwb(0 0% 100%);
+  
+  margin-left: -35px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translatey(-52%);
+          transform: translatey(-52%);
+  -webkit-transition: margin 0.2s ease-out;
+  transition: margin 0.2s ease-out;
+}
+
+dt {
+  color: rgb(255, 255, 255);
+  font-size: 5vh;
+  font-family: "font_h1", sans-serif;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotatez(-90deg);
+          transform: translate(-50%, -50%) rotatez(-90deg);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: normal;
+}
+
+/*
+dd {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100%;
+  max-width: 45%;
+  margin-left: 55%;
+  padding: 5px;
+  color: #999;
+  font-size: 2.3vh;
+}
+/*
+
+
+
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+  dl {
+    height: auto;
+    max-width: 100%;
+    min-height: 200px;
+  }
+  dt {
+    font-size: 2.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+}
+
+/* Pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+  dt {
+    font-size: 2vh;
+    transform: translate(-50%, -50%) rotate(0deg);
+    top: 20px;
+    left: 50%;
+  }
+  dl:before {
+    font-size: 20vh;
+    margin-left: 0;
+    top: 10%;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+dd{
+  display: none;
+}
+
+/* ==== MODAL OSCURO (robusto) ==== */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  z-index: 999;
+  padding: 20px; /* evita que el contenido toque el borde */
+}
+
+.modal.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-content {
+  position: relative;
+  background: #0b0b0b;
+  color: #f5f5f5;
+  padding: 22px 26px;
+  border-radius: 10px;
+  max-width: 680px;
+  width: 92%;
+  max-height: 80vh;           /* 🔹 límite de altura */
+  overflow-y: auto;           /* 🔹 permite scroll interno */
+  box-shadow: 0 8px 30px rgba(255, 0, 0, 0.12);
+  transform: translateY(10px) scale(0.98);
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  scrollbar-width: thin;      /* Firefox */
+  scrollbar-color: #ff4444 #111;
+}
+
+/* Scrollbar en Chrome/Edge/Safari */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: #111;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #ff4444;
+  border-radius: 4px;
+}
+
+.modal.is-open .modal-content {
+  transform: translateY(0) scale(1);
+  opacity: 1;
 }
