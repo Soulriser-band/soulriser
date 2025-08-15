@@ -11652,7 +11652,7 @@ dd {
   dt {
     font-size: 2vh;
     transform: translate(-50%, -50%) rotate(0deg);
-    top: 20px;
+    top: 3.5em;
     left: 50%;
   }
   dl:before {
