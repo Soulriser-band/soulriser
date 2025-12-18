@@ -27,11 +27,11 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
   </head>
   
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body data-bs-spy="scroll" data-bs-target=".custom-navbar" data-bs-offset="40" tabindex="0" id="home">
     
     <!-- Navbar -->
     <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,7 +40,7 @@
                     <a class="nav-link font_text_nav" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font_text_nav" href="#about"></a>
+                    <a class="nav-link font_text_nav" href="index.html#about">Nosotros</a>
                 </li>
                 
                 
@@ -52,10 +52,10 @@
             <ul class="navbar-nav">
                 
                 <li class="nav-item">
-                    <a class="nav-link font_text_nav" href="#gallary"></a>
+                    <a class="nav-link font_text_nav" href="index.html#gallery">Galeria</a>
                 </li>
                <li class="nav-item">
-                    <a class="nav-link font_text_nav" href="#">Letras<span class="sr-only">(current)</span></a>
+                    <a class="nav-link font_text_nav active" href="#">Letras<span class="visually-hidden">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -72,7 +72,7 @@
 
     
 
-    <div id="gallary" class="text-center text-light has-height-md middle-items wow fadeIn"> 
+    <div id="gallery" class="text-center text-light has-height-md middle-items  "> 
         <h2 class="section-title font_titulos">Letras</h2>
     </div>
 
@@ -370,60 +370,60 @@
         <div class="row justify-content-center social-icons-container">
             <div class="col-4 col-sm-2 col-md-auto text-center mb-3">
                 <a href="https://www.facebook.com/soulriser.sl" target="_blank" rel="noopener noreferrer" class="social-icon-link">
-                    <img src="assets/imgs/facebook.png" alt="Facebook" class="img-fluid social-icon">
+                    <img src="assets/imgs/facebook.png" alt="Facebook" loading="lazy" class="img-fluid social-icon">
                     </a>
             </div>
 
             <div class="col-4 col-sm-2 col-md-auto text-center mb-3">
                 <a href="https://www.instagram.com/soulriser2023" target="_blank" rel="noopener noreferrer" class="social-icon-link">
-                    <img src="assets/imgs/instagram.png" alt="Instagram" class="img-fluid social-icon">
+                    <img src="assets/imgs/instagram.png" alt="Instagram" loading="lazy" class="img-fluid social-icon">
                     </a>
             </div>
 
             <div class="col-4 col-sm-2 col-md-auto text-center mb-3">
                 <a href="https://www.tiktok.com/@soulriser" target="_blank" rel="noopener noreferrer" class="social-icon-link">
-                    <img src="assets/imgs/tiktok.png" alt="TikTok" class="img-fluid social-icon">
+                    <img src="assets/imgs/tiktok.png" alt="TikTok" loading="lazy" class="img-fluid social-icon">
                     </a>
             </div>
 
             <div class="col-4 col-sm-2 col-md-auto text-center mb-3">
                 <a href="https://www.youtube.com/@soulriser9980" target="_blank" rel="noopener noreferrer" class="social-icon-link">
-                    <img src="assets/imgs/youtube.png" alt="YouTube" class="img-fluid social-icon">
+                    <img src="assets/imgs/youtube.png" alt="YouTube" loading="lazy" class="img-fluid social-icon">
                     </a>
             </div>
 
             <div class="col-4 col-sm-2 col-md-auto text-center mb-3">
                 <a href="https://open.spotify.com/intl-es/artist/5knCXAXJMazIea7AYPj51i?si=mKV4-uLPSzu8a_DU5tPebg" target="_blank" rel="noopener noreferrer" class="social-icon-link">
-                    <img src="assets/imgs/spotify.png" alt="Spotify" class="img-fluid social-icon">
+                    <img src="assets/imgs/spotify.png" alt="Spotify" loading="lazy" class="img-fluid social-icon">
                     </a>
             </div>
 
             <div class="col-4 col-sm-2 col-md-auto text-center mb-3">
                 <a href="https://linktr.ee/Soulriser" target="_blank" rel="noopener noreferrer" class="social-icon-link">
-                    <img src="assets/imgs/linktree.png" alt="Linktree" class="img-fluid social-icon">
+                    <img src="assets/imgs/linktree.png" alt="Linktree" loading="lazy" class="img-fluid social-icon">
                     </a>
             </div>
         </div>
     </div>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-    <div class=" text-light text-center border-top wow fadeIn">
+    <div class=" text-light text-center border-top  ">
         <p class="mb-0 py-3 text-muted small font_text_about_detalle">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Desarrollado por <a href="https://f4cku23.github.io" target="_blank">Paulo Nievas</a></p>
     </div>
     <!-- end of page footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <script src="assets/js/letras.js"></script>
+    <script>
+        document.addEventListener("scroll", function () {
+          const nav = document.querySelector(".custom-navbar");
+          if (window.scrollY > 50) {
+            nav.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+          }
+        });
+        </script>
+        
 
 
   <!-- Modal -->

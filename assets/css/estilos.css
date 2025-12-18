@@ -11248,27 +11248,30 @@ pre {
   }
 }
 
+.custom-navbar {
+  transition: background-color .3s ease;
+}
 
-.affix {
-  min-height: 80px;
+.custom-navbar.scrolled {
   background-color: #000;
-  border-bottom: 1px solid #495057;
 }
 
-.affix .navbar-brand .brand-img {
-  -webkit-transform: translateY(-30px);
-      -ms-transform: translateY(-30px);
-          transform: translateY(-30px);
-  opacity: 0;
-  visibility: hidden;
-  width: 50px;
+.custom-navbar .brand-txt {
+  display: none;
 }
 
-.affix .navbar-brand .brand-txt {
+.custom-navbar.scrolled .brand-img {
+  display: none;
+}
+
+.custom-navbar.scrolled .brand-txt {
+  display: inline-block;
+  color: red;
   opacity: 1;
   visibility: visible;
   bottom: 50%;
 }
+
 
 .header {
   height: 100vh;
@@ -11419,20 +11422,20 @@ pre {
   min-height: 500px;
 }
 
-.gallary {
+.gallery {
   margin: 0;
 }
 
-.gallary .gallary-item {
+.gallery .gallery-item {
   padding: 0;
   border: 1px solid #343a40;
 }
 
-.gallary .gallary-item .gallary-img {
+.gallery .gallery-item .gallery-img {
   width: 100%;
 }
 
-.gallary .gallary-item .gallary-overlay {
+.gallery .gallery-item .gallery-overlay {
   background: rgba(52, 58, 64, 0.7);
   position: absolute;
   left: 0;
@@ -11458,13 +11461,13 @@ pre {
   transition: all 0.2s linear 0s;
 }
 
-.gallary .gallary-item .gallary-overlay .gallary-icon {
+.gallery .gallery-item .gallery-overlay .gallery-icon {
   font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
 }
 
-.gallary .gallary-item:hover .gallary-overlay {
+.gallery .gallery-item:hover .gallery-overlay {
   visibility: visible;
   opacity: 1;
 }
